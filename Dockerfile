@@ -5,9 +5,8 @@ FROM ubuntu:14.04
  
 MAINTAINER tiechou "answer.wlf@foxmail.com"  
 
-RUN apt-get update
-  
-RUN apt-get -y install gcc          \
+RUN apt-get update                  \
+    && apt-get -y install gcc       \
     && apt-get -y install g++       \
     && apt-get -y install scons     \
     && apt-get -y install automake  \
