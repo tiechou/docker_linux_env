@@ -20,4 +20,5 @@ RUN apt-get -y install vim          \
     && apt-get -y install tree      \
     && apt-get -y install wget      \
     && apt-get -y install curl      \
-    && apt-get -y install ssh
+    && apt-get -y install ssh       \
+    && apt-get -y install sysstat
