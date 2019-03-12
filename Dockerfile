@@ -1,7 +1,7 @@
 # This dockerfile uses the ubuntu iamge
 # Author: tiechou
 
-FROM ubuntu:14.04
+FROM ubuntu:16.04
  
 MAINTAINER tiechou "answer.wlf@foxmail.com"  
 
