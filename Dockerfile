@@ -14,7 +14,8 @@ RUN apt-get update                  \
     && apt-get -y install libtool   \
     && apt-get -y install cmake
 
-RUN apt-get -y install vim          \
+RUN apt-get -y install man          \
+    && apt-get -y install vim       \
     && apt-get -y install git       \
     && apt-get -y install ctags     \
     && apt-get -y install tree      \
@@ -22,3 +23,6 @@ RUN apt-get -y install vim          \
     && apt-get -y install curl      \
     && apt-get -y install ssh       \
     && apt-get -y install sysstat
+
+RUN apt-get -y install npm          \
+    && npm install -g tldr
