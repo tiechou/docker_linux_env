@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="gbk"?>
+
+<services>
+    <service name="cm_http" type="VIP" address="http:10.232.41.135:2090" timeout="5" />
+    <service name="qr" type="VIP" address="http:10.130.2.70:2187" />
+    <service name="seo" type="VIP" address="http:10.130.2.71:2187" />
+    <service name="kingso" type="VIP" address="http:10.130.2.71:8855" />
+</services>

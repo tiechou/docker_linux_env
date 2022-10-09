@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!--
+    cm_subscriber.xml clustermap客户端的配置文件
+    包括cm server的信息，心跳节点的配置，订阅者的配置
+    配置文件内的所有选项均区分大小写
+-->
+
+<cm_server> 
+    <!-- 
+        ZooKeeper Server的地址或者域名，如果没有指定，则使用本地cm_server配置
+        线上(杭州)环境: cms-hz.tbsite.net:12181
+        线上(青岛)环境: cms-qd.tbsite.net:12181
+        预发环境: cms-pre.tbsite.net:12181
+        日常环境: 10.232.41.135:12181
+    --> 
+    <zk_mode value="10.232.41.135:12181" zk_path="/cm_server_common" timeout="10" />
+</cm_server>
+
+<cm_subscriber>
+    <!--
+        订阅类型 :  st_all, st_part 两种
+        st_all  :订阅所以集群
+        st_part :订阅部分集群，此时需要指定订阅集群的集群名 
+    -->
+    <sub_type value="st_all" />
+
+    <compress_type value="ct_snappy" />
+
+    <!--
+        是否开启本地模式，不需要连接CMServer直接从本地构建集群地图信息
+        ZK&&CMServer同时出问题时临时使用
+    -->
+    <local_mode enable="no" cluster_config="/home/admin/cm.xml" />
+
+</cm_subscriber>

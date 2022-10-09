@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="gbk"?>
+
+<apps>
+    <app name="cm"  module_path="/home/admin/cm/http_server/lib/libcm_http.so"  module_conf="/home/admin/cm/http_server/conf/cm_subscriber.xml"/>
+</apps>

@@ -1,0 +1,34 @@
+
+{
+    "enable" : true,
+    
+    "common" :
+    {
+        "thread_num" : 0,
+        "task_queue_size" : 0
+    },
+    
+    "protocol" :
+    {
+        "http" :
+        {
+            "enable" : true,
+            "timeout" : 5000
+        },
+
+        "tcp" :
+        {
+            "enable" : true,
+            "timeout" : 5000,
+            "queue_limit" : 300
+        },
+
+        "arpc" :
+        {
+            "enable" : true,
+            "timeout" : 5000,
+            "queue_limit" : 300
+        }
+
+    }
+}
